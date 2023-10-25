@@ -406,6 +406,8 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 5rem; }
+    #main-footer .footer-content .social a {
+      color: #f4f4f4; }
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;

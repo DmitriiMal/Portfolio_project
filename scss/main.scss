@@ -390,20 +390,25 @@ img {
     align-items: center;
     height: 5rem;
 
-    .social .fab {
-      margin-right: 1rem;
-      border: 2px #fff solid;
-      border-radius: 50%;
-      height: 20px;
-      width: 20px;
-      line-height: 20px;
-      text-align: center;
-      padding: 0.5rem;
-      transition: all 0.5s;
+    .social {
+      a {
+        color: $light-color;
+      }
+      .fab {
+        margin-right: 1rem;
+        border: 2px #fff solid;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0.5rem;
+        transition: all 0.5s;
 
-      &:hover {
-        background: $main-color;
-        color: set-text-color($main-color);
+        &:hover {
+          background: $main-color;
+          color: set-text-color($main-color);
+        }
       }
     }
   }
