@@ -189,7 +189,7 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
+  width: 130px;
   height: 70px;
   color: #fff;
   text-transform: uppercase; }
@@ -217,7 +217,8 @@ img {
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   #header-home .header-content {
     text-align: center;
     padding-top: 20%; }
@@ -426,7 +427,9 @@ img {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+      #header-home .header-content h1 {
+        font-size: 2.5rem; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -494,6 +497,4 @@ img {
 
 @media (max-height: 580px) {
   #header-home .header-content {
-    padding-top: 2rem; }
-    #header-home .header-content h1 {
-      font-size: 2.5rem; } }
+    padding-top: 2rem; } }

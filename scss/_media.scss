@@ -5,6 +5,10 @@
 
     .header-content {
       padding-top: 5rem;
+
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
@@ -151,9 +155,9 @@
     .header-content {
       padding-top: 2rem;
 
-      h1 {
-        font-size: 2.5rem;
-      }
+      // h1 {
+      //   font-size: 2.5rem;
+      // }
     }
   }
 }
