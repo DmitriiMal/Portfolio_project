@@ -440,11 +440,12 @@ img {
   #header-home {
     height: 10rem;
     border-bottom: 3px solid #ffbc00;
-    background-position: 20% 30%; }
+    background-position: 20% 37%; }
     #header-home .header-content {
       display: none; }
   #header-inner {
-    height: 10rem; }
+    height: 10rem;
+    background-position: 20% 37%; }
   #home-a .specials,
   #home-b .stats,
   #home-c .process,
