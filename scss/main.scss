@@ -382,6 +382,7 @@ img {
   background: $dark-color;
   color: set-text-color($dark-color);
   height: 5rem;
+  margin-top: auto;
 
   .footer-content {
     display: flex;

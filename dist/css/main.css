@@ -399,7 +399,8 @@ img {
 #main-footer {
   background: #333;
   color: #f4f4f4;
-  height: 5rem; }
+  height: 5rem;
+  margin-top: auto; }
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
