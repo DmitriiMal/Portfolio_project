@@ -56,6 +56,10 @@
     grid-template-columns: 1fr;
   }
 
+  .items {
+    grid-gap: 1rem;
+  }
+
   // Home
   #home {
     &-a {
@@ -169,5 +173,6 @@
 
   .items {
     grid-template-columns: repeat(2, 1fr);
+    // grid-gap: 1rem;
   }
 }

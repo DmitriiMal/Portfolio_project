@@ -470,6 +470,8 @@ img {
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr; }
+  .items {
+    grid-gap: 1rem; }
   #home-a .specials div {
     border-bottom: 1px #f4f4f4 solid;
     padding-bottom: 1rem; }
