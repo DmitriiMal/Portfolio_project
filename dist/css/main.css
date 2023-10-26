@@ -92,12 +92,12 @@ input[class^='btn-']:hover {
 
 .items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+  grid-template-columns: repeat(3, 1fr); }
 
 .item {
   position: relative;
   background: #ffbc00;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   overflow: hidden; }
   .item::after {
     content: '';
@@ -193,6 +193,9 @@ h6 {
 img {
   width: 100%; }
 
+.display-none {
+  display: none; }
+
 #logo {
   width: 130px;
   height: 70px;
@@ -241,7 +244,7 @@ img {
   margin-top: 3rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
   #home-a .specials .fas {
     color: #ffbc00;
     padding-bottom: 0.4rem; }
