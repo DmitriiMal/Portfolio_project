@@ -278,21 +278,29 @@ img {
         background: $main-color;
       }
     }
+
+    .stack {
+      display: flex;
+      justify-content: space-around;
+
+      i {
+        color: $main-color;
+      }
+    }
   }
 
   // About C
   &-c {
     .about-logos {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       grid-gap: 2rem;
+      padding-left: 1rem;
     }
 
     img {
+      opacity: 0.4;
       width: 70%;
-      // added from me //
-      padding: 1rem 0; //
-      ///////////////////
     }
   }
 

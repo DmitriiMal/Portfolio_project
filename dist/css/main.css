@@ -345,14 +345,21 @@ img {
     text-align: center;
     background: #ffbc00; }
 
+#about-b .stack {
+  display: flex;
+  justify-content: space-around; }
+  #about-b .stack i {
+    color: #ffbc00; }
+
 #about-c .about-logos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  padding-left: 1rem; }
 
 #about-c img {
-  width: 70%;
-  padding: 1rem 0; }
+  opacity: 0.4;
+  width: 70%; }
 
 #about-d .testimonials {
   display: grid;
