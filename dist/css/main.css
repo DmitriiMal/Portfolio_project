@@ -133,7 +133,8 @@ input[class^='btn-']:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     line-height: 0; }
   .item-text {
     position: absolute;
@@ -181,7 +182,9 @@ ul {
 
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   text-transform: uppercase;
   font-weight: normal; }
 
