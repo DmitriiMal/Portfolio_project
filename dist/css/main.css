@@ -157,7 +157,7 @@ input[class^='btn-']:hover {
   .item-text-title {
     font-size: 2rem;
     padding: 0 1rem;
-    margin: 5px 0 0 0; }
+    margin: 5px 0 5px 0; }
   .item-text-category {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -437,7 +437,9 @@ img {
     #header-home .header-content {
       padding-top: 5rem; }
       #header-home .header-content h1 {
-        font-size: 2.5rem; } }
+        font-size: 2.5rem; }
+  .items {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -506,4 +508,6 @@ img {
 
 @media (max-height: 580px) {
   #header-home .header-content {
-    padding-top: 2rem; } }
+    padding-top: 2rem; }
+  .items {
+    grid-template-columns: repeat(2, 1fr); } }

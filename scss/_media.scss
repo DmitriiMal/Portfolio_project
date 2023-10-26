@@ -11,6 +11,10 @@
       }
     }
   }
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Smartphones
@@ -161,5 +165,9 @@
       //   font-size: 2.5rem;
       // }
     }
+  }
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
