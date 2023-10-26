@@ -182,10 +182,12 @@ ul {
 
 h2,
 h3,
-h4,
+h4 {
+  text-transform: uppercase;
+  font-weight: normal; }
+
 h5,
 h6 {
-  text-transform: uppercase;
   font-weight: normal; }
 
 img {
