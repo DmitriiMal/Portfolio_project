@@ -350,6 +350,8 @@ img {
   justify-content: space-around; }
   #about-b .stack i {
     color: #ffbc00; }
+  #about-b .stack h4 {
+    opacity: 0.5; }
 
 #about-c .about-logos {
   display: grid;
