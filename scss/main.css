@@ -238,6 +238,11 @@ img {
   height: 70px;
   color: #fff;
   text-transform: uppercase;
+  transition: scale 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+#logo:hover {
+  scale: 1.03;
+  filter: brightness(1.05);
 }
 
 #main-nav {
@@ -251,7 +256,7 @@ img {
 #main-nav li {
   padding: 1rem 1.5rem;
 }
-#main-nav a {
+#main-nav li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -259,10 +264,10 @@ img {
   padding-bottom: 0.5rem;
   transition: border-color 0.5s;
 }
-#main-nav a:hover {
+#main-nav li a:hover {
   border-color: #ccc;
 }
-#main-nav a.current {
+#main-nav li a.current {
   border-color: #ffa364;
 }
 

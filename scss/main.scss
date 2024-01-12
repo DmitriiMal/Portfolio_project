@@ -53,6 +53,12 @@ img {
   height: 70px;
   color: #fff;
   text-transform: uppercase;
+  transition: scale 0.2s ease-in-out, filter 0.2s ease-in-out;
+
+  &:hover {
+    scale: 1.03;
+    filter: brightness(1.05);
+  }
 }
 
 //Main nav
@@ -67,22 +73,22 @@ img {
 
   li {
     padding: 1rem 1.5rem;
-  }
 
-  a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
 
-    &:hover {
-      border-color: $medium-color;
-    }
+      &:hover {
+        border-color: $medium-color;
+      }
 
-    &.current {
-      border-color: $main-color;
+      &.current {
+        border-color: $main-color;
+      }
     }
   }
 }
