@@ -240,6 +240,8 @@ img {
     // Grig Area
     .bio-image {
       grid-area: bioimage;
+      height: 100%;
+      object-fit: cover;
     }
 
     .bio {
@@ -268,6 +270,7 @@ img {
   }
   // About B
   &-b {
+    // border-bottom: 1px solid $main-color;
     .progress {
       overflow: hidden;
       height: 20px;

@@ -371,6 +371,9 @@ img {
 }
 #about-a .bio-image {
   grid-area: bioimage;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #about-a .bio {
   grid-area: bio;
@@ -576,6 +579,9 @@ img {
   }
   #about-a .about-info {
     grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3";
+  }
+  #about-b {
+    border-bottom: 1px solid #ffa364;
   }
   #about-c {
     display: none;

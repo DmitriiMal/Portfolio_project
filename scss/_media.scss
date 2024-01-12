@@ -89,6 +89,9 @@
       }
     }
 
+    &-b {
+      border-bottom: 1px solid $main-color;
+    }
     &-c {
       display: none;
     }
