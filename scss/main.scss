@@ -391,7 +391,8 @@ img {
       }
     }
 
-    button[type='submit'] {
+    button[type='submit'],
+    input[type='submit'] {
       width: 50%;
     }
   }

@@ -482,7 +482,8 @@ img {
 #contact-a .text-fields .text-input {
   padding: 0.5rem 1rem;
 }
-#contact-a button[type=submit] {
+#contact-a button[type=submit],
+#contact-a input[type=submit] {
   width: 50%;
 }
 #contact-b .contact-info {
