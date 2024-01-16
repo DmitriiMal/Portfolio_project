@@ -302,13 +302,11 @@ img {
     line-height: 70px;
     text-align: center;
     position: relative;
-    transition: all 0.5s; }
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out; }
     #home-c .process-icon:hover {
       background: #ffa364;
       color: #333;
-      width: 73px;
-      height: 73px;
-      line-height: 73px; }
+      transform: scale(1.05); }
       #home-c .process-icon:hover .process-step {
         background: #333;
         color: #f4f4f4; }
