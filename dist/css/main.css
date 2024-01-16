@@ -281,7 +281,7 @@ img {
   text-align: center; }
   #home-c .process-step {
     position: absolute;
-    top: 0;
+    top: -13px;
     right: 0;
     font-size: 28px;
     background: #ffa364;
@@ -297,19 +297,20 @@ img {
     background: #333;
     color: #f4f4f4;
     padding: 2rem;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
     text-align: center;
     position: relative;
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out; }
     #home-c .process-icon:hover {
       background: #ffa364;
       color: #333;
-      transform: scale(1.05); }
+      transform: scale(1.02); }
       #home-c .process-icon:hover .process-step {
         background: #333;
-        color: #f4f4f4; }
+        color: #f4f4f4;
+        top: -20px; }
 
 #about-a .about-info {
   display: grid;

@@ -188,7 +188,7 @@ img {
       // Process-step
       &-step {
         position: absolute;
-        top: 0;
+        top: -13px;
         right: 0;
         font-size: 28px;
         background: $main-color;
@@ -207,9 +207,9 @@ img {
         background: $dark-color;
         color: set-text-color($dark-color);
         padding: 2rem;
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
         text-align: center;
         position: relative;
         transition: transform $transition-duration ease-in-out, background $transition-duration ease-in-out, color $transition-duration ease-in-out;
@@ -217,11 +217,12 @@ img {
         &:hover {
           background: $main-color;
           color: set-text-color($main-color);
-          transform: scale(1.05);
+          transform: scale(1.02);
 
           .process-step {
             background: $dark-color;
             color: set-text-color($dark-color);
+            top: -20px;
           }
         }
       }
