@@ -53,7 +53,7 @@ img {
   height: 70px;
   color: #fff;
   text-transform: uppercase;
-  transition: scale 0.2s ease-in-out, filter 0.2s ease-in-out;
+  transition: scale $transition-duration ease-in-out, filter $transition-duration ease-in-out;
 
   &:hover {
     scale: 1.03;
@@ -80,7 +80,7 @@ img {
       text-transform: uppercase;
       border-bottom: 3px transparent solid;
       padding-bottom: 0.5rem;
-      transition: border-color 0.5s;
+      transition: border-color $transition-duration;
 
       &:hover {
         border-color: $medium-color;
@@ -198,7 +198,7 @@ img {
         width: 15px;
         line-height: 15px;
         padding: 1rem;
-        transition: all 0.5s;
+        transition: all $transition-duration;
       }
 
       // Process-icon
@@ -212,7 +212,7 @@ img {
         line-height: 70px;
         text-align: center;
         position: relative;
-        transition: transform 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out;
+        transition: transform $transition-duration ease-in-out, background $transition-duration ease-in-out, color $transition-duration ease-in-out;
 
         &:hover {
           background: $main-color;
@@ -438,7 +438,7 @@ img {
         line-height: 20px;
         text-align: center;
         padding: 0.5rem;
-        transition: all 0.5s;
+        transition: background $transition-duration ease-in-out, color $transition-duration ease-in-out;
 
         &:hover {
           background: $main-color;

@@ -10,7 +10,7 @@
 %btn-shared {
   display: inline-block;
   padding: 0.8rem 2rem;
-  transition: all 0.5s;
+  transition: background-color $transition-duration ease-in-out;
   border: none;
   cursor: pointer;
 }
