@@ -1,0 +1,16 @@
+/* .my-card {
+  min-height: 400px;
+} */
+
+.my-card img {
+  aspect-ratio: 5/4;
+  /* object-fit: cover; */
+}
+
+.asp-1 {
+  aspect-ratio: 1;
+}
+
+.my-mt {
+  margin-top: 10rem;
+}
