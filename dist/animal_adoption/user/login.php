@@ -45,14 +45,11 @@ if (isset($_POST["login"])) {
       if ($row["status"] === "user") {
         $_SESSION["user"] = $row["id"];
         header("Location: ../index.php");
+        echo "<script>window.location.reload()</script>";
       } elseif ($row["status"] === "adm") {
         $_SESSION["adm"] = $row["id"];
-        // header("Location: ../animals/animals_dashboard.php");
-        header("Refresh: 0");
-        echo "
-            <div class='alert alert-warning mt-5' role='alert'>
-            You are an admin! <i class='fa-solid fa-lock-open'></i>
-            </div>";
+        header("Location: ../animals/animals_dashboard.php");
+        echo "<script>window.location.reload()</script>";
       }
     } else {
       echo "
@@ -85,7 +82,7 @@ if (isset($_POST["login"])) {
 
 
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="email" name="email" value="admin@admin.com" placeholder="name@example.com">
+          <input type="email" class="form-control" id="email" name="email" value="user@user.com" placeholder="name@example.com">
           <!-- <label for="email">Email address</label> -->
           <?= $emailError == "" ?  "<label for='email'>Email address</label>" : "<label class='text-danger' for='email'>$emailError</label>" ?>
         </div>
