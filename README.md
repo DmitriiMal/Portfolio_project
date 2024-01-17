@@ -1,5 +1,5 @@
 # My Potrfolio Website
- Here I tried my best in Sass and also added a little bit of JavaScript.
+ Here I tried my best in Sass and also added a little bit of JavaScript and PHP.
 
 
 ## Was bilt with:
@@ -19,3 +19,5 @@ http://malyshkin.net
   <img  src="https://github.com/DmitriiMal/Portfolio_project/blob/master/dist/img/Screenshots/Screenshot_1.png"  />
   <br>
   <img  src="https://github.com/DmitriiMal/Portfolio_project/blob/master/dist/img/Screenshots/Screenshot_2.png"  />
+  <br>
+  <img  src="https://github.com/DmitriiMal/Portfolio_project/blob/master/dist/img/Screenshots/Screenshot_3.png"  />
