@@ -425,6 +425,14 @@ img {
   font-size: 3rem;
   font-weight: normal; }
 
+#coming-soon {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; }
+
 #main-footer {
   background: #333;
   color: #f4f4f4;

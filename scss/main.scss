@@ -135,7 +135,6 @@ img {
       display: grid;
       grid-gap: 1rem;
       grid-template-columns: repeat(3, 1fr);
-      // grid-template-columns: repeat(4, 1fr);
 
       .fas {
         color: $main-color;
@@ -410,6 +409,17 @@ img {
       font-weight: normal;
     }
   }
+}
+
+// Coming soon
+
+#coming-soon {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
 
 // Footer
