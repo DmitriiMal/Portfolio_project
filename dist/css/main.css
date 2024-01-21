@@ -4,7 +4,7 @@
   margin: auto;
   overflow: hidden; }
 
-.btn-main, .btn-light, .btn-dark {
+.btn-main, .btn-light, .btn-dark, .btn-item {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: background-color 0.3s ease-in-out;
@@ -22,6 +22,14 @@
 .btn-dark {
   color: #f4f4f4;
   background-color: #333; }
+
+.btn-item {
+  padding: 0.4rem 1rem;
+  color: #f4f4f4;
+  background-color: #333; }
+  .btn-item:hover {
+    background-color: #f4f4f4 !important;
+    color: #333; }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
@@ -491,8 +499,6 @@ img {
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr; }
-  .items {
-    grid-gap: 1rem; }
   #home-a .specials div {
     border-bottom: 1px #f4f4f4 solid;
     padding-bottom: 1rem; }

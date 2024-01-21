@@ -33,6 +33,18 @@
     color: #f4f4f4;
     background-color: $dark-color;
   }
+
+  &-item {
+    @extend %btn-shared;
+    padding: 0.4rem 1rem;
+    color: #f4f4f4;
+    background-color: $dark-color;
+
+    &:hover {
+      background-color: $light-color !important;
+      color: set-text-color($light-color);
+    }
+  }
 }
 
 button[class^='btn-']:hover,
