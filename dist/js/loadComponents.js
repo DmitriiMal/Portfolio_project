@@ -12,6 +12,7 @@ function loadElements(location, element, callback) {
   xhttp.send();
 }
 
+// Highlight Current Page in the navbar
 function highlightCurrentPage() {
   // Get the current page URL or any identifier you are using to determine the current page
   let currentPage = window.location.pathname;
@@ -28,5 +29,12 @@ function highlightCurrentPage() {
   });
 }
 
-loadElements('footer.html', 'footer');
+// Update year in the footer
+function getYear() {
+  let year = new Date().getFullYear();
+  console.log(year);
+  document.querySelector('#copyright').innerHTML = `Copyright &copy; ${year} Dmitrii Malyshkin`;
+}
+
 loadElements('navbar.html', 'nav', highlightCurrentPage);
+loadElements('footer.html', 'footer', getYear);

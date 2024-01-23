@@ -27,15 +27,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $myEmail = "dmitrii@malyshkin.net";
 
     if (mail($myEmail, $subject, $msg, $headers)) {
-      echo "sent";
-      header('Location: ' . 'contact.html');
+      // echo "sent";
+      header('Refresh:5; https://malyshkin.net/contact.html');
+      echo 'Thank you for your message! You\'ll be redirected in about 5 secs. If not, click <a href="https://malyshkin.net/contact.html">here</a>.';
     } else {
       echo "error";
     }
   } else {
-    echo "something went wrong :(";
-    echo '<pre style="padding: 10px; background: #ccc; color: #333; border-radius: 4px">';
-    var_dump($recaptcha);
-    echo '</pre>';
+    header('Refresh:30; https://malyshkin.net/contact.html');
+    echo 'Something went wrong :( You\'ll be redirected in about 30 secs. If not, click <a href="https://malyshkin.net/contact.html">here</a>.';
   }
 }
