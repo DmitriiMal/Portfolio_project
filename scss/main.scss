@@ -460,5 +460,9 @@ img {
   }
 }
 
+.grecaptcha-badge {
+  bottom: 80px !important;
+}
+
 // Import Media Queries
 @import 'media';
