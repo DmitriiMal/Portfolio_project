@@ -32,8 +32,7 @@ function highlightCurrentPage() {
 // Update year in the footer
 function getYear() {
   let year = new Date().getFullYear();
-  console.log(year);
-  document.querySelector('#copyright').innerHTML = `Copyright &copy; ${year} Dmitrii Malyshkin`;
+  document.querySelector('#copyright').innerHTML = `&copy; ${year} Dmitrii Malyshkin`;
 }
 
 loadElements('navbar.html', 'nav', highlightCurrentPage);
