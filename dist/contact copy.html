@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- recaptcha  -->
-    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
-    <!-- <script>
+    <script>
       // Submit the form and get token
       function onSubmit(token) {
         document.getElementById('myForm').submit();
       }
-    </script> -->
+    </script>
 
     <title>Contact Me | Web Developer</title>
   </head>
@@ -35,22 +35,18 @@
         <div class="bottom-line"></div>
         <p class="lead">Here is how you can reach me</p>
 
-        <form id="myForm">
+        <form action="process.php" method="POST" id="myForm">
           <div class="text-fields">
-            <input id="name" type="text" class="text-input name-input" placeholder="Name" name="name" />
-            <input id="subject" type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
-            <input id="email" type="email" class="text-input email-input" placeholder="Email Address" name="email" />
-            <input id="phone" type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
-            <textarea id="msg" class="text-input message-input" placeholder="Enter Message" name="msg"></textarea>
+            <input type="text" class="text-input name-input" placeholder="Name" name="name" required />
+            <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
+            <input type="email" class="text-input email-input" placeholder="Email Address" name="email" required />
+            <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
+            <textarea class="text-input message-input" placeholder="Enter Message" name="msg" required></textarea>
             <div class="my-2"></div>
           </div>
-          <div>
-            <!-- <button id="myButton" type="submit" name="send" class="btn-dark g-recaptcha" data-sitekey="6LdNSVkpAAAAAO5AMUoJt-EsH_20xpRrPqpTbuOB" data-callback="onSubmit" data-action="send">Send</button> -->
-            <!-- <input type="submit" name="send" value="Send" class="btn-dark" /> -->
-            <button id="myButton" type="submit" name="send" value="Send" class="btn-dark">Send</button>
-          </div>
+
+          <div><button id="myButton" type="submit" name="send" class="btn-dark g-recaptcha" data-sitekey="6LdNSVkpAAAAAO5AMUoJt-EsH_20xpRrPqpTbuOB" data-callback="onSubmit" data-action="send">Send</button></div>
           <h5 id="error-captcha" class="my-1 lead"></h5>
-          <div id="submit-message"></div>
         </form>
       </div>
     </section>
@@ -88,6 +84,5 @@
     <footer></footer>
     <script src="https://kit.fontawesome.com/553d5d3b41.js" crossorigin="anonymous"></script>
     <script src="js/loadComponents.js"></script>
-    <script src="js/contact.js"></script>
   </body>
 </html>
