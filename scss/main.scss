@@ -16,6 +16,7 @@ body {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   background: #fff;
+  overflow-x: clip;
 }
 
 a {
@@ -124,7 +125,6 @@ img {
     border-bottom: 3px solid $main-color;
   }
 }
-
 // Home Sections
 
 #home {
@@ -138,6 +138,7 @@ img {
 
       .fas {
         color: $main-color;
+        color: $gradient;
         padding-bottom: 0.4rem;
       }
     }

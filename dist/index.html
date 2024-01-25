@@ -6,10 +6,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Dmitrii Malyshkin | Web Developer</title>
+    <style>
+      /* Animation on scroll */
+
+      .fade-out {
+        animation: fade-out linear forwards;
+        animation-timeline: view();
+        animation-range: exit -200px;
+      }
+
+      .fade-in-up {
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        scale: 0.8;
+        transform: translateY(50px);
+        animation-range: 80px 180px;
+      }
+
+      .fade-in-down {
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        transform: translateY(-20px);
+        animation-range: 160px 260px;
+      }
+
+      .fade-in-left {
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        transform: translateX(-100px);
+        animation-range: 160px 260px;
+      }
+
+      .image-animation {
+        animation: image-animation linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
+      }
+
+      @keyframes fade-out {
+        to {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+      }
+
+      @keyframes fade-in {
+        to {
+          scale: 1;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes image-animation {
+        25% {
+          opacity: 1;
+        }
+        85%,
+        100% {
+          transform: translateY(-100px);
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -17,9 +82,9 @@
       <div class="container">
         <nav><!-- Navbar --></nav>
         <div class="header-content">
-          <h1>I Am Dmitrii, <span class="txt-type" data-wait="3000" data-words='["Frontend Developer", "Backend Developer", "Full Stack Developer"]'></span></h1>
-          <p class="lead">I specialize in creating responsive and interactive websites and applications</p>
-          <a href="work.html" class="btn-light">View My Work</a>
+          <h1 class="fade-out">I Am Dmitrii, <span class="txt-type" data-wait="3000" data-words='["Frontend Developer", "Backend Developer", "Full Stack Developer"]'></span></h1>
+          <p class="lead fade-out">I specialize in creating responsive and interactive websites and applications</p>
+          <a href="work.html" class="btn-light fade-out">View My Work</a>
         </div>
       </div>
     </header>
@@ -136,6 +201,5 @@
     <script src="js/typewriter.js"></script>
     <script src="https://kit.fontawesome.com/553d5d3b41.js" crossorigin="anonymous"></script>
     <script src="js/loadComponents.js"></script>
-    <!-- <script src="js/animation.js"></script> -->
   </body>
 </html>

@@ -1,12 +1,13 @@
 // Variables
 $website-width: 1280px;
 $main-color: #ffa364;
-//
+$gradient-color: hsl(34, 100%, 70%);
 // $main-color: #ffa586;
 // $main-color: #ffa586;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
+$gradient: linear-gradient(265deg, $main-color 55%, $gradient-color 100%);
 $bg-image: url('../img/showcase.jpg');
 $transition-duration: 0.3s;
 

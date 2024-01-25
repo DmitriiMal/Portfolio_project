@@ -6,7 +6,7 @@
 .btn-main, .btn-light, .btn-dark, .btn-item {
   display: inline-block;
   padding: 0.8rem 2rem;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, background 0.3s ease-in-out;
   border: none;
   cursor: pointer; }
 
@@ -97,30 +97,6 @@ input[class^='btn-']:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .fade-in-up, .fade-in-down, .fade-in-left {
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view(); }
-  .fade-in-up {
-    scale: 0.8;
-    opacity: 0;
-    transform: translateY(50px);
-    animation-range: 100px 200px; }
-  .fade-in-down {
-    opacity: 0;
-    transform: translateY(-20px);
-    animation-range: 180px 280px; }
-  .fade-in-left {
-    opacity: 0;
-    transform: translateX(-100px);
-    animation-range: 180px 280px; }
-  @keyframes fade-in {
-    to {
-      scale: 1;
-      opacity: 1;
-      transform: translateY(0); } } }
-
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -203,7 +179,8 @@ input[class^='btn-']:hover {
 body {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
-  background: #fff; }
+  background: #fff;
+  overflow-x: clip; }
 
 a {
   text-decoration: none;
@@ -284,6 +261,7 @@ img {
   grid-template-columns: repeat(3, 1fr); }
   #home-a .specials .fas {
     color: #ffa364;
+    color: linear-gradient(265deg, #ffa364 55%, #ffbd66 100%);
     padding-bottom: 0.4rem; }
 
 #home-b .stats {

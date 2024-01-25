@@ -10,7 +10,7 @@
 %btn-shared {
   display: inline-block;
   padding: 0.8rem 2rem;
-  transition: background-color $transition-duration ease-in-out;
+  transition: background-color $transition-duration ease-in-out, background $transition-duration ease-in-out;
   border: none;
   cursor: pointer;
 }
@@ -143,44 +143,73 @@ input[class^='btn-']:hover {
   margin: 0 auto 1rem auto;
 }
 
-// Animation on scroll
+// // Animation on scroll
 
-@media (prefers-reduced-motion: no-preference) {
-  %fade-shared {
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-  }
+// @media (prefers-reduced-motion: no-preference) {
+//   %fade-shared {
+//     opacity: 0;
+//     animation: fade-in linear forwards;
+//     animation-timeline: view();
+//   }
 
-  .fade-in {
-    &-up {
-      @extend %fade-shared;
-      scale: 0.8;
-      opacity: 0;
-      transform: translateY(50px);
-      animation-range: 100px 200px;
-    }
+//   .fade {
+//     &-out {
+//       animation: fade-out linear forwards;
+//       animation-timeline: view();
+//       animation-range: exit -200px;
+//     }
 
-    &-down {
-      @extend %fade-shared;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation-range: 180px 280px;
-    }
+//     &-in {
+//       &-up {
+//         @extend %fade-shared;
+//         scale: 0.8;
+//         transform: translateY(50px);
+//         // animation-range: entry;
+//         animation-range: 80px 180px;
+//       }
 
-    &-left {
-      @extend %fade-shared;
-      opacity: 0;
-      transform: translateX(-100px);
-      animation-range: 180px 280px;
-    }
-  }
+//       &-down {
+//         @extend %fade-shared;
+//         transform: translateY(-20px);
+//         animation-range: 160px 260px;
+//       }
 
-  @keyframes fade-in {
-    to {
-      scale: 1;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
+//       &-left {
+//         @extend %fade-shared;
+//         transform: translateX(-100px);
+//         animation-range: 160px 260px;
+//       }
+//     }
+//   }
+
+//   .image-animation {
+//     animation: image-animation linear forwards;
+//     animation-timeline: view();
+//     animation-range: exit;
+//   }
+
+//   @keyframes fade-out {
+//     to {
+//       opacity: 0;
+//       transform: translateY(-50px);
+//     }
+//   }
+
+//   @keyframes fade-in {
+//     to {
+//       scale: 1;
+//       opacity: 1;
+//       transform: translateY(0);
+//     }
+//   }
+
+//   @keyframes image-animation {
+//     25% {
+//       opacity: 1;
+//     }
+//     85%,
+//     100% {
+//       transform: translateY(-100px);
+//     }
+//   }
+// }
