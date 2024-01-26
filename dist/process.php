@@ -61,7 +61,7 @@ if (true) {
     $msg = "From: $name\r\n $email\r\n $phone" . "\r\n" . "\r\n" . "$msg";
 
     if (mail($myEmail, $subject, $msg, $headers)) {
-      $outputMessage = 'Thank you for your message! ;)';
+      $outputMessage = 'success';
     } else {
       $outputMessage = 'Something went wrong, please try again later';
     }
@@ -70,8 +70,6 @@ if (true) {
   }
 }
 
-// $response = [$outputMessage, $nameError, $emailError, $msgError];
-// echo json_encode($response);
 
 // $response array
 $response['outputMessage'] = $outputMessage;

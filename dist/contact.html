@@ -33,7 +33,7 @@
       <div class="container">
         <h2 class="section-title">Contact Me</h2>
         <div class="bottom-line"></div>
-        <p class="lead">Here is how you can reach me</p>
+        <p id="submit-message" class="lead">Here is how you can reach me</p>
 
         <form id="myForm">
           <div class="text-fields">
@@ -42,15 +42,15 @@
             <input id="email" type="email" class="text-input email-input" placeholder="Email Address" name="email" />
             <input id="phone" type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
             <textarea id="msg" class="text-input message-input" placeholder="Enter Message" name="msg"></textarea>
-            <div class="my-2"></div>
+            <div id="error-message" class="my-2"></div>
           </div>
-          <div>
+          <div id="myButton">
             <!-- <button id="myButton" type="submit" name="send" class="btn-dark g-recaptcha" data-sitekey="6LdNSVkpAAAAAO5AMUoJt-EsH_20xpRrPqpTbuOB" data-callback="onSubmit" data-action="send">Send</button> -->
             <!-- <input type="submit" name="send" value="Send" class="btn-dark" /> -->
             <button id="myButton" type="submit" name="send" value="Send" class="btn-dark">Send</button>
           </div>
           <h5 id="error-captcha" class="my-1 lead"></h5>
-          <div id="submit-message"></div>
+          <!-- <div id="submit-message"></div> -->
         </form>
       </div>
     </section>
