@@ -26,7 +26,7 @@ function insertName(e) {
 
       if (response.outputMessage == 'success') {
         // Replace button with icons
-        myButton.innerHTML = `<i class="fa-solid fa-wind fa-flip-horizontal fa-2xl" style="color: #333333;"></i> <i class="fa-solid fa-envelope-circle-check fa-2xl" style="color: #333333;"></i>`;
+        myButton.innerHTML = `<i class="fa-solid fa-wind fa-flip-horizontal fa-2xl" style="color: #ffa364;"></i> <i class="fa-solid fa-envelope-circle-check fa-2xl" style="color: #ffa364;"></i>`;
         submitMessage.innerHTML = `Thank you for your message! ;)`;
         // Reset errorMessage
         errorMessage.innerHTML = '';
