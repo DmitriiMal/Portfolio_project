@@ -14,6 +14,7 @@
   border: none;
   cursor: pointer;
 }
+
 .btn {
   &-main {
     @extend %btn-shared;

@@ -115,6 +115,10 @@ img {
         font-weight: normal;
         line-height: 1.2;
       }
+
+      p {
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -253,6 +257,15 @@ img {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      .signature {
+        margin: 1rem 3rem 0 0;
+        text-align: end;
+      }
     }
 
     .award-1 {
