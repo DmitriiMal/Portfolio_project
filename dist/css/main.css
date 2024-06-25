@@ -22,17 +22,23 @@
   color: #f4f4f4;
   background-color: #333; }
 
-.btn-item {
+.btn-item, .btn-item-secondary {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   right: -50px;
   border: 2px #fff solid;
   border-radius: 50%;
   text-align: center;
   align-items: center;
-  padding: 0.5rem 0.6rem;
+  padding: 0.5rem 0.65rem;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   z-index: 10; }
+  .btn-item-secondary {
+    padding: 0.5rem 0.75rem;
+    bottom: -50px;
+    right: 60px; }
+    .btn-item-secondary i {
+      padding: 0; }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
@@ -40,12 +46,20 @@ input[class^='btn-']:hover {
   background-color: #ffa364;
   color: #333; }
 
-.item:hover .btn-item {
+.item:hover .btn-item, .item:hover .btn-item-secondary {
   animation: project-link 100ms cubic-bezier(0.2, 1, 0.3, 1) 500ms forwards; }
+
+.item:hover .btn-item-secondary {
+  animation: git-link 100ms cubic-bezier(0.2, 1, 0.3, 1) 600ms forwards; }
 
 @keyframes project-link {
   to {
-    right: 20px; } }
+    right: 10px; } }
+
+@keyframes git-link {
+  to {
+    right: 60px;
+    bottom: 10px; } }
 
 .bg-main {
   background: #ffa364;
