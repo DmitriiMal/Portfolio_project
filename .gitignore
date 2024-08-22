@@ -1,1 +1,5 @@
 node_modules
+dist/edgeledger_website
+dist/newsgrid
+dist/food_blog
+dist/weekly_planner
