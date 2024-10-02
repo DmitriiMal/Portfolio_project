@@ -44,6 +44,11 @@ img {
   width: 100%;
 }
 
+::selection {
+  background-color: $main-color;
+  color: set-text-color($main-color);
+}
+
 .display-none {
   display: none;
 }
@@ -366,6 +371,12 @@ img {
 // Contact Page
 #contact {
   &-a {
+    input,
+    textarea {
+      caret-color: $dark-color;
+      outline-color: $main-color;
+    }
+
     .text-fields {
       display: grid;
       grid-template-areas:

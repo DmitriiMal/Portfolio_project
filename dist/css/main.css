@@ -238,6 +238,10 @@ h6 {
 img {
   width: 100%; }
 
+::selection {
+  background-color: #ffa364;
+  color: #333; }
+
 .display-none {
   display: none; }
 
@@ -440,6 +444,11 @@ img {
     height: 50px;
     border-radius: 50%;
     margin-right: 0.5rem; }
+
+#contact-a input,
+#contact-a textarea {
+  caret-color: #333;
+  outline-color: #ffa364; }
 
 #contact-a .text-fields {
   display: grid;
